@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(135deg,#153677,#4e085f);
+    padding: 10px;
+}
+.display{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+.app{
+    width: 100%;
+    max-width: 540px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.app h2{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.app img{
+    width:40px;
+    padding-left: 10px;
+}
+.to-do-input{
+    background-color: #edeef0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:20px ;
+    margin-bottom:20px;
+}
+.to-do-input input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.to-do-input button{
+    border: none;
+    outline: none;
+    background-color: #ff5945;
+    padding: 16px 50px;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul li::before{
+    content:"";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url(../img/unchecked.png);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    top: 19px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through; 
+}
+ul li.checked::before{
+    background-image: url(../img/checked.png);
+}
+#alert{
+    background-color: rgba(248, 215, 218, 1);
+    color: rgba(114, 28, 36,1);
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border-width: 1px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+.none{
+    display: none;
+
+}
+ul li i{
+   padding: 10px;
+   border: none;
+}
+ul li i:hover{
+    background-color: #edeef0;
+    border-radius: 10px;
+}
